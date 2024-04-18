@@ -17,9 +17,11 @@ public class GestoreServizi {
         ArrayList<Turno> listaTurni = ProcessoDBMS.recuperaTurniCorrenti(dataOdierna.toString(),time);
         int[] numeroTurnIPerServizio = contaTurniPerServizio(listaTurni);
         ArrayList<String> listaServizi = new ArrayList<>();
+
         for(int i=0; i<4; ++i){
             System.out.println(numeroTurnIPerServizio[i]);
         }
+
         listaServizi.add("Venditore");
         listaServizi.add("Noleggiatore");
         listaServizi.add("Meccanico");

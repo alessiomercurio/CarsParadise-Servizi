@@ -15,8 +15,8 @@ public class GestoreStipendi {
         LocalDate dataCorrente= LocalDate.now();
 
         //if(dataCorrente.getDayOfMonth() != 1){
-            LocalDate inizioMesePrecedente = dataCorrente.minusMonths(1).minusDays(25);
-            LocalDate fineMesePrecedente = dataCorrente.minusDays(27);
+            LocalDate inizioMesePrecedente = dataCorrente.minusMonths(1).minusDays(6);
+            LocalDate fineMesePrecedente = dataCorrente.minusDays(7);
 
             ArrayList<Impiegato> listaImpiegati = ProcessoDBMS.recuperaImpiegati();
             ArrayList<Integer> listaCompensi = ProcessoDBMS.richiediCompensi();
